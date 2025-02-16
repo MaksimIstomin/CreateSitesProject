@@ -1,3 +1,12 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  border: none;
+}
+
 .header {
   background: url(/img/header-bg.jpg) no-repeat center/cover;
 }
@@ -14,6 +23,8 @@
   line-height: 134%;
   text-align: center;
   color: #fff;
+  width: 800px;
+  margin: 0 auto;
 }
 .header-projects {
   background: #4985FF;
@@ -24,6 +35,8 @@
   left: 850px;
   border-radius: 30px;
   margin-bottom: 435px;
+  border: none;
+  cursor: pointer;
 }
 
 .nav {
@@ -31,7 +44,6 @@
   padding-top: 40px;
   padding-bottom: 40px;
   padding-right: 407px;
-  height: 95px;
 }
 .nav-list {
   display: flex;
@@ -44,4 +56,20 @@
   font-size: 16px;
   color: #fff;
   list-style: none;
+  position: relative;
+  cursor: pointer;
+}
+.nav-list__item::after {
+  content: "";
+  position: absolute;
+  height: 2.5px;
+  width: 100%;
+  background-color: white;
+  bottom: -41px;
+  left: 0;
+  opacity: 0;
+  transition: all 0.4s;
+}
+.nav-list__item:hover::after {
+  opacity: 1;
 }
