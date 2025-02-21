@@ -114,3 +114,72 @@
         }
     }
 }
+.quality-wrapper{
+    background-color: #f6f6f9;
+    padding-top: 100px;
+}
+.quality{
+    display: flex;
+    border-bottom: 1px solid lightgrey;
+    &-left{
+        width: 489px;
+        height: 295px;
+        margin-left: 415px;
+
+        &-title{
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 146%;
+            margin-bottom: 60px;
+            width: 424px;
+        }
+        &-desc{
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 158%;
+            color: grey;
+            margin-bottom: 42px;
+        }
+        &-more{
+            font-weight: 500;
+            font-size: 16px;
+            text-decoration: underline;
+            text-decoration-skip-ink: none;
+            color: #4985FF;
+        }
+    }
+    &-right{
+        margin-left: 111px;
+    }
+}
+.projects{
+    display: flex;
+    padding-left: 403px;
+    &-card{
+        
+        margin-left: 97px;
+        &-verh{
+            display: flex;
+            margin-bottom: 17px;
+            margin-top: 70px;
+            &-img{
+                width: 30px;
+                height: 30px;
+            }
+            &__125{
+                font-family: var(--font-family);
+                font-weight: 400;
+                font-size: 36px;
+                line-height: 146%;
+                color: #000;
+                margin-left: 23px;
+            }
+        }
+        &__niz{
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 158%;
+            color: #999999;
+        }
+    }
+}
