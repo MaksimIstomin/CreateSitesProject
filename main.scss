@@ -246,3 +246,37 @@
         }    
     }
 }
+.ourProjects{
+    background-color: #F6F6F8;
+    padding: 100px 405px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__title{
+        font-size: 36px;
+        line-height: 146%;
+        margin-bottom: 28px;
+    }
+    &__desc{
+        font-size: 16px;
+        color: #999999;
+        width: 700px;
+        margin-bottom: 60px;
+        line-height: 158%;
+    }
+    &-cards{
+        display: flex;
+        justify-content: space-between;
+        column-gap: 30px;
+        margin-bottom: 50px;
+    }
+    &__more{
+        padding: 14px 36px;
+        border-radius: 30px;
+        background-color: #4985FF;
+        color: #fff;
+        font-size: 18px;
+        cursor: pointer;
+    }
+}

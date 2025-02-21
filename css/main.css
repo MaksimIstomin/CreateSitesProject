@@ -260,3 +260,39 @@ button {
 .project-bottom-cards-item__more {
   color: #4985FF;
 }
+
+.ourProjects {
+  background-color: #F6F6F8;
+  padding: 100px 405px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.ourProjects__title {
+  font-size: 36px;
+  line-height: 146%;
+  margin-bottom: 28px;
+}
+.ourProjects__desc {
+  font-size: 16px;
+  color: #999999;
+  width: 700px;
+  margin-bottom: 60px;
+  line-height: 158%;
+}
+.ourProjects-cards {
+  display: flex;
+  justify-content: space-between;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+  margin-bottom: 50px;
+}
+.ourProjects__more {
+  padding: 14px 36px;
+  border-radius: 30px;
+  background-color: #4985FF;
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+}
