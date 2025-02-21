@@ -197,3 +197,66 @@ button {
   line-height: 158%;
   color: #999999;
 }
+
+.project-top {
+  background-color: #504DC2;
+  padding-top: 100px;
+  padding-left: 405px;
+  padding-right: 405px;
+  padding-bottom: 302px;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.project-top__title {
+  color: white;
+  width: 500px;
+  font-size: 36px;
+  line-height: 146%;
+}
+.project-top__services {
+  padding: 15px 36px;
+  background-color: #4985FF;
+  border-radius: 30px;
+  color: white;
+  cursor: pointer;
+}
+.project-bottom {
+  height: 490px;
+  position: relative;
+  z-index: 2;
+}
+.project-bottom-cards {
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+  top: -260px;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  padding-left: 405px;
+  padding-right: 405px;
+}
+.project-bottom-cards-item {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+}
+.project-bottom-cards-item__photo {
+  border-radius: 10px;
+}
+.project-bottom-cards-item__title {
+  color: #4985FF;
+  font-size: 18px;
+}
+.project-bottom-cards-item__title span {
+  color: #000;
+}
+.project-bottom-cards-item__desc {
+  color: #999999;
+  margin-bottom: 17px;
+}
+.project-bottom-cards-item__more {
+  color: #4985FF;
+}
