@@ -7,6 +7,10 @@ button {
   border: none;
 }
 
+li {
+  list-style: none;
+}
+
 .header {
   background: url(/img/header-bg.jpg) no-repeat center/cover;
   padding-bottom: 435px;
@@ -319,13 +323,24 @@ button {
   top: 240px;
 }
 .video-show__play {
-  width: 300px;
+  width: 250px;
+  padding-left: 60px;
   height: 100px;
   color: white;
   background-color: rgba(0, 0, 0, 0);
   border: 1px solid white;
   border-radius: 60px;
   cursor: pointer;
+  position: relative;
+}
+.video-show__play::before {
+  content: "";
+  position: absolute;
+  background: url(/img/play-button.svg) no-repeat center/cover;
+  width: 60px;
+  height: 60px;
+  left: 30px;
+  top: 20px;
 }
 .video__title {
   font-size: 36px;
@@ -408,6 +423,7 @@ button {
 .footer-cards__h3 {
   font-weight: 600;
   font-size: 18px;
+  margin-bottom: 35px;
 }
 .footer-cards-ul-li {
   font-family: var(--font-family);
@@ -416,4 +432,53 @@ button {
   line-height: 158%;
   color: grey;
   margin-bottom: 30px;
+  position: relative;
+}
+.footer-cards-ul-li::before {
+  content: "";
+  position: absolute;
+  background: url(/img/footer-arrow.svg) no-repeat center/cover;
+  width: 4.8px;
+  height: 8.9px;
+  top: 7px;
+  left: -8px;
+}
+
+.mail, .phone, .location {
+  position: relative;
+}
+
+.mail::before, .phone::before, .location::before {
+  content: "";
+  position: absolute;
+  width: 17px;
+  height: 17px;
+  top: 4px;
+  left: -20px;
+}
+
+.mail::before {
+  background: url(/img/mail.svg) no-repeat center/cover;
+}
+
+.phone::before {
+  background: url(/img/call.svg) no-repeat center/cover;
+}
+
+.location::before {
+  background: url(/img/geo.svg) no-repeat center/cover;
+}
+
+.protect {
+  background: #F6F6F8;
+  text-align: center;
+  font-size: 13px;
+  color: #999999;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.footer-line {
+  margin-left: 405px;
+  margin-right: 405px;
 }
