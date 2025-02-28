@@ -5,6 +5,9 @@ li{
 .header{
     background: url(/img/header-bg.jpg) no-repeat center/cover;
     padding-bottom: 435px;
+    @media (max-width:1440px) {
+        padding-bottom: 250px;
+    }
     &-container{
         display: flex;
         flex-direction: column;
@@ -42,10 +45,18 @@ li{
     padding-top: 40px;
     padding-bottom: 40px;
     padding-right: 407px;
+    @media (max-width:1440px) {
+        padding: 30px;
+        text-align: center;
+    }
     &-list{
         display: flex;
         column-gap: 40px;
         justify-content: flex-end;
+        @media (max-width:1440px) {
+            column-gap: 20px;
+            justify-content: center;
+        }
         &__item{
             font-weight: 500;
             font-size: 16px;
@@ -88,6 +99,9 @@ li{
     }
     &-wrapper{
          padding: 110px 405px;
+         @media (max-width:1440px) {
+            padding: 90px 0px;
+        }
     }
     &-cards{
         display: flex;
@@ -124,11 +138,16 @@ li{
 .quality{
     display: flex;
     border-bottom: 1px solid lightgrey;
+    @media (max-width:1440px) {
+        justify-content: center;
+    }
     &-left{
         width: 489px;
         height: 295px;
         margin-left: 415px;
-
+        @media (max-width:1440px) {
+            margin-left: 0px;
+        }
         &-title{
             font-weight: 700;
             font-size: 36px;
@@ -158,6 +177,10 @@ li{
 .projects{
     display: flex;
     padding-left: 403px;
+    @media (max-width:1440px) {
+        padding-left: 0px;
+        justify-content: center;
+    }
     &-card{
         
         margin-left: 97px;
@@ -217,6 +240,9 @@ li{
         height: 490px;
         position: relative;
         z-index: 2;
+        @media (max-width:1440px) {
+            height: 300px;
+        }
         &-cards{
             column-gap: 30px;
             top: -260px;
@@ -225,10 +251,17 @@ li{
             position: absolute;
             padding-left: 405px;
             padding-right: 405px;
+            @media (max-width:1440px) {
+                padding-left: 40px;
+                padding-right: 40px;
+            }
             &-item{
                 display: flex;
                 flex-direction: column;
                 row-gap: 30px;
+                @media (max-width:1440px) {
+                    width: 27%;
+                }
                 &__photo{
                     border-radius: 10px;
                 }
@@ -395,6 +428,10 @@ li{
     column-gap: 40px;
     padding-left: 405px;
     padding-top: 70px;
+    @media (max-width:1440px) {
+        padding-left:0px;
+        justify-content: center;
+    }
     &-cards{
         width: 245px;
         height: 198px;

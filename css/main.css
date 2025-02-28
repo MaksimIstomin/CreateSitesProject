@@ -15,6 +15,11 @@ li {
   background: url(/img/header-bg.jpg) no-repeat center/cover;
   padding-bottom: 435px;
 }
+@media (max-width: 1440px) {
+  .header {
+    padding-bottom: 250px;
+  }
+}
 .header-container {
   display: flex;
   flex-direction: column;
@@ -53,11 +58,24 @@ li {
   padding-bottom: 40px;
   padding-right: 407px;
 }
+@media (max-width: 1440px) {
+  .nav {
+    padding: 30px;
+    text-align: center;
+  }
+}
 .nav-list {
   display: flex;
   -moz-column-gap: 40px;
        column-gap: 40px;
   justify-content: flex-end;
+}
+@media (max-width: 1440px) {
+  .nav-list {
+    -moz-column-gap: 20px;
+         column-gap: 20px;
+    justify-content: center;
+  }
 }
 .nav-list__item {
   font-weight: 500;
@@ -102,6 +120,11 @@ li {
 .services-wrapper {
   padding: 110px 405px;
 }
+@media (max-width: 1440px) {
+  .services-wrapper {
+    padding: 90px 0px;
+  }
+}
 .services-cards {
   display: flex;
   justify-content: space-between;
@@ -140,10 +163,20 @@ li {
   display: flex;
   border-bottom: 1px solid lightgrey;
 }
+@media (max-width: 1440px) {
+  .quality {
+    justify-content: center;
+  }
+}
 .quality-left {
   width: 489px;
   height: 295px;
   margin-left: 415px;
+}
+@media (max-width: 1440px) {
+  .quality-left {
+    margin-left: 0px;
+  }
 }
 .quality-left-title {
   font-weight: 700;
@@ -174,6 +207,12 @@ li {
 .projects {
   display: flex;
   padding-left: 403px;
+}
+@media (max-width: 1440px) {
+  .projects {
+    padding-left: 0px;
+    justify-content: center;
+  }
 }
 .projects-card {
   margin-left: 97px;
@@ -233,6 +272,11 @@ li {
   position: relative;
   z-index: 2;
 }
+@media (max-width: 1440px) {
+  .project-bottom {
+    height: 300px;
+  }
+}
 .project-bottom-cards {
   -moz-column-gap: 30px;
        column-gap: 30px;
@@ -243,10 +287,21 @@ li {
   padding-left: 405px;
   padding-right: 405px;
 }
+@media (max-width: 1440px) {
+  .project-bottom-cards {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
 .project-bottom-cards-item {
   display: flex;
   flex-direction: column;
   row-gap: 30px;
+}
+@media (max-width: 1440px) {
+  .project-bottom-cards-item {
+    width: 27%;
+  }
 }
 .project-bottom-cards-item__photo {
   border-radius: 10px;
@@ -414,6 +469,12 @@ li {
        column-gap: 40px;
   padding-left: 405px;
   padding-top: 70px;
+}
+@media (max-width: 1440px) {
+  .footer {
+    padding-left: 0px;
+    justify-content: center;
+  }
 }
 .footer-cards {
   width: 245px;
