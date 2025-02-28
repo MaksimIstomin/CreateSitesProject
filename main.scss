@@ -172,6 +172,9 @@ li{
     }
     &-right{
         margin-left: 111px;
+        @media (max-width:1024px) {
+            margin-left: 0px;
+        }
     }
 }
 .projects{
@@ -184,6 +187,9 @@ li{
     &-card{
         
         margin-left: 97px;
+        @media (max-width:1024px) {
+            margin-left: 70px;
+        }
         &-verh{
             display: flex;
             margin-bottom: 10px;
@@ -255,6 +261,9 @@ li{
                 padding-left: 40px;
                 padding-right: 40px;
             }
+            @media (max-width:1024px) {
+                width: 90vw;
+            }
             &-item{
                 display: flex;
                 flex-direction: column;
@@ -290,6 +299,9 @@ li{
     display: flex;
     flex-direction: column;
     align-items: center;
+    @media (max-width:1024px) {
+        padding: 70px 30px;
+    }
     &__title{
         font-size: 36px;
         line-height: 146%;
@@ -307,6 +319,11 @@ li{
         justify-content: space-between;
         column-gap: 30px;
         margin-bottom: 50px;
+        &__item{
+            @media (max-width:1024px) {
+                width: 23%;
+            }
+        }
     }
     &__more{
         padding: 14px 36px;
