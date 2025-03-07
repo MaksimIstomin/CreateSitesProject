@@ -8,6 +8,9 @@ li{
     @media (max-width:1440px) {
         padding-bottom: 250px;
     }
+    @media (max-width:768px) {
+        padding-bottom: 60px;
+    }
     &-container{
         display: flex;
         flex-direction: column;
@@ -19,6 +22,9 @@ li{
         text-align: center;
         color: #fff;
         margin-top: 220px;
+        @media (max-width:768px) {
+            margin-top: 30px;
+        }
     }
     &-subtitle{
         font-weight: 800;
@@ -31,6 +37,9 @@ li{
         margin-bottom: 50px;
         @media (max-width:1024px) {
             width: auto;
+        }
+        @media (max-width:768px) {
+            font-size: 28px;
         }
     }
     &-projects{
@@ -51,6 +60,9 @@ li{
     @media (max-width:1440px) {
         padding: 30px;
         text-align: center;
+    }
+    @media (max-width:768px) {
+        padding: 9px;
     }
     &-list{
         display: flex;
@@ -94,6 +106,7 @@ li{
         margin-bottom: 32px;
         @media (max-width:768px) {
             width: auto;
+            font-size: 28px;
         }
     }
     &-desc{
@@ -104,12 +117,16 @@ li{
         margin-bottom: 70px;
         @media (max-width:768px) {
             width: auto;
+            margin-bottom: 30px;
         }
     }
     &-wrapper{
          padding: 110px 405px;
          @media (max-width:1440px) {
             padding: 90px 0px;
+        }
+        @media (max-width:768px) {
+            padding: 30px 0px;
         }
     }
     &-cards{
@@ -150,6 +167,9 @@ li{
 .quality-wrapper{
     background-color: #f6f6f9;
     padding-top: 100px;
+    @media (max-width:768px) {
+        padding-top: 30px;
+    }
 }
 .quality{
     display: flex;
@@ -274,11 +294,9 @@ li{
         justify-content: space-between;
         align-items: center;
         @media (max-width:768px) {
-            padding-left: 100px;
-            padding-right: 100px;
+            padding: 30px;
             flex-direction: column;
-            padding-bottom: 30px;
-            padding-top: 30px;
+            text-align: center;
         }
         &__title{
             color: white;
@@ -366,6 +384,9 @@ li{
     @media (max-width:1024px) {
         padding: 70px 30px;
     }
+    @media (max-width:768px) {
+        padding: 30px;
+    }
     &__title{
         font-size: 36px;
         line-height: 146%;
@@ -415,7 +436,7 @@ li{
     z-index: 2;
     margin-bottom: 165px;
     @media (max-width:768px) {
-        padding: 70px 30px;
+        padding: 30px;
     }
     &-show{
         background: url(/img/show-bg-vidoe.png) no-repeat center/cover;
@@ -430,8 +451,8 @@ li{
             top: 300px;
         }
         @media (max-width:768px) {
-            width: 300px;
-            height: 200px;
+            width: 266px;
+            height: 147px;
             top: 120px;
         }
         &__play{
@@ -519,6 +540,9 @@ li{
         text-align: center;
         color: grey;
         margin-bottom: 85px;
+        @media (max-width:768px) {
+            margin-bottom: 30px;
+        }
     }
 }
 .footer{
@@ -535,6 +559,7 @@ li{
         flex-direction: column;
         align-items: center;
         row-gap: 16px;
+        padding: 30px;
     }
     &-cards{
         width: 245px;
@@ -599,4 +624,9 @@ li{
 .footer-line{
     margin-left: 405px;
     margin-right: 405px;
+}
+h3{
+    @media (max-width:768px) {
+        font-size: 28px!important;
+    }
 }
